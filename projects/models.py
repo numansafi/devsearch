@@ -1,8 +1,7 @@
 from django.db import models
 import uuid
-from django.db.models.base import Model
 
-from django.db.models.expressions import Value
+
 
 class Project(models.Model):
     title = models.CharField(max_length=200)
