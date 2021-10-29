@@ -3,10 +3,11 @@
 
 <h1>Project Form</h1>
 
-<form action="POST">
+<form action="" method="POST">
   <!-- to ensure inputted data is not manipulated -->
   {% csrf_token %}
-
+  <!-- 'form.as_p' wraps 'p' tags around each field -->
+  {{form.as_p}}
   <input type="Submit">
 </form>
 
